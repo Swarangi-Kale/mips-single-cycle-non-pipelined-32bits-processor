@@ -1,12 +1,12 @@
 // ============================================================
-// adder.v
-// Generic 32-bit adder, no control signal, no flags.
-// Reused as two separate instances in the datapath:
-//   1) PC + 4              (instruction address increment)
-//   2) (PC+4) + offset<<2  (branch target address)
-// The shift-left-2 of the branch offset happens in a separate
-// module (per architecture decision) -- this adder just adds
-// whatever two 32-bit values it's given.
+// Module: adder.v
+// Project: Single-cycle MIPS processor in Verilog HDL.
+// Description: Generic 32-bit adder, no control signal, no flags.
+//              Reused as two separate instances in the datapath:
+//                  1) PC + 4              (instruction address increment)
+//                  2) (PC+4) + offset<<2  (branch target address)
+//              The shift-left-2 of the branch offset happens in a separate module
+// Author: github.com/Swarangi-Kale
 // ============================================================
 
 module adder #(

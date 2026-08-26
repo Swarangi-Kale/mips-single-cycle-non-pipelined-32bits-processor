@@ -1,7 +1,6 @@
 // ============================================================
 // shift_left2_tb.v
-// Simple direct-stimulus testbench for shift_left2.v
-//   - No tasks/functions, just sequential stimulus blocks
+// Testbench for shift_left2.v
 //   - Instantiates the module TWICE with different parameters,
 //     mirroring its two real uses in the datapath:
 //       dut_branch: IN_WIDTH=32, OUT_WIDTH=32 (branch offset)

@@ -1,10 +1,9 @@
 // ============================================================
 // adder_tb.v
-// Simple direct-stimulus testbench for adder.v
-//   - No tasks/functions, just sequential stimulus blocks
-//   - Covers: PC+4 increment, branch base+offset, general
-//     32-bit addition, and edge cases (wraparound, negative
-//     offset / backward branch)
+// Testbench for adder.v
+// Tests: PC+4 increment, branch base+offset, general
+//        32-bit addition, and edge cases (wraparound, negative
+//        offset / backward branch)
 // ============================================================
 
 `timescale 1ns / 1ps

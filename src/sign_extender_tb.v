@@ -1,7 +1,6 @@
 // ============================================================
 // sign_extend_tb.v
-// Simple direct-stimulus testbench for sign_extend.v
-//   - No tasks/functions, just sequential stimulus blocks
+// Testbench for sign_extend.v
 //   - Covers positive values, negative values, boundary values,
 //     and realistic addi/lw/sw/beq immediate examples
 // ============================================================

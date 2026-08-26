@@ -1,11 +1,8 @@
 // ============================================================
-// sign_extend.v
-// Sign-extends a 16-bit immediate to 32 bits.
-// Used for all four I-type instructions in this ISA (addi, lw,
-// sw, beq) -- all of them sign-extend their immediate/offset
-// field, so one module covers every case; no zero-extend
-// variant is needed since this ISA has no andi/ori-style
-// instructions.
+// Module: sign_extend.v
+// Project: Single-cycle MIPS processor in Verilog HDL.
+// Description: Sign-extends a 16-bit immediate to 32 bits.
+// Author: github.com/Swarangi-Kale
 // ============================================================
 
 module sign_extend #(
