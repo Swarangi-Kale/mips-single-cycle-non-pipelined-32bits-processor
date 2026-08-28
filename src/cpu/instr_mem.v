@@ -28,7 +28,7 @@ module instr_mem #(
         // program read as 0 instead of X in simulation.
         for (i = 0; i < MEM_WORDS; i = i + 1)
             mem[i] = 32'b0;
-        $readmemh(INIT_FILE, mem);
+//        $readmemh(INIT_FILE, mem);
     end
 
     // Word-aligned indexing: drop the byte-offset bits [1:0].
