@@ -80,7 +80,7 @@ module mips_tb;
         // ========================================================
         $display("---- PHASE 2: full hex program run ----");
 
-        $readmemh("instr_mem_init.hex", dut.imem.mem);
+        $readmemh("mips_pgm.hex", dut.imem.mem);
         reset = 1;
         @(negedge clk);
         reset = 0;
